@@ -11,48 +11,62 @@
 <header class="navbar">
     <div class="logo">Poltekpar Lombok</div>
     <nav>
-        <ul>
-            <li><a href="#beranda">Beranda</a></li>
-            <li><a href="#tentang">Tentang</a></li>
-            <li><a href="#prodi">Program Studi</a></li>
-            <li><a href="#kontak">Kontak</a></li>
-        </ul>
+        <a href="#hero">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#prodi">Program Studi</a>
+        <a href="#statistik">Statistik</a>
+        <a href="#kontak">Kontak</a>
+        <button id="darkToggle">🌙</button>
     </nav>
 </header>
 
-<section id="beranda" class="hero">
-    <h1>Politeknik Pariwisata Lombok</h1>
-    <p>Mencetak SDM Pariwisata Unggul, Profesional, dan Berdaya Saing Global</p>
-    <button onclick="scrollToSection('tentang')">Selengkapnya</button>
-</section>
-
-<section id="tentang" class="section">
-    <h2>Tentang Kami</h2>
-    <p>
-        Politeknik Pariwisata Lombok merupakan institusi pendidikan tinggi
-        yang berfokus pada pengembangan sumber daya manusia di bidang pariwisata
-        dan perhotelan.
-    </p>
-</section>
-
-<section id="prodi" class="section gray">
-    <h2>Program Studi</h2>
-    <div class="cards">
-        <div class="card">D4 Pengelolaan Perhotelan</div>
-        <div class="card">D3 Tata Hidang</div>
-        <div class="card">D3 Seni Kuliner</div>
-        <div class="card">D3 Usaha Perjalanan Wisata</div>
+<section id="hero" class="hero">
+    <div class="hero-content">
+        <h1>Politeknik Pariwisata Lombok</h1>
+        <p>Kampus Pariwisata Unggulan & Berstandar Global</p>
+        <button onclick="scrollTo('tentang')">Jelajahi</button>
     </div>
 </section>
 
-<section id="kontak" class="section">
+<section id="tentang" class="section reveal">
+    <h2>Tentang Kami</h2>
+    <p>
+        Poltekpar Lombok adalah institusi pendidikan tinggi pariwisata yang
+        mencetak lulusan profesional, inovatif, dan siap bersaing secara global.
+    </p>
+</section>
+
+<section id="prodi" class="section gray reveal">
+    <h2>Program Studi</h2>
+    <div class="cards" id="prodiList"></div>
+</section>
+
+<section id="statistik" class="section reveal">
+    <h2>Statistik Kampus</h2>
+    <div class="stats">
+        <div class="stat">
+            <h3 class="counter" data-target="3000">0</h3>
+            <p>Mahasiswa</p>
+        </div>
+        <div class="stat">
+            <h3 class="counter" data-target="150">0</h3>
+            <p>Dosen</p>
+        </div>
+        <div class="stat">
+            <h3 class="counter" data-target="25">0</h3>
+            <p>Kerja Sama Industri</p>
+        </div>
+    </div>
+</section>
+
+<section id="kontak" class="section gray reveal">
     <h2>Kontak</h2>
     <p>Email: info@poltekparlombok.ac.id</p>
     <p>Telepon: (0370) 000000</p>
 </section>
 
 <footer>
-    <p>© 2026 Politeknik Pariwisata Lombok</p>
+    © 2026 Politeknik Pariwisata Lombok
 </footer>
 
 <script src="script.js"></script>
